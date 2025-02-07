@@ -15,4 +15,7 @@
     "prisma": "^6.3.1",
     "sqlite3": "^5.1.7"
   }
+  "scripts": {
+  "start": "prisma generate && node index.js"
+}
 }

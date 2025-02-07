@@ -11,7 +11,10 @@ fastify.get('/', async (req, res) => {
 });
 
 const PORT = process.env.PORT || 3001;
-
-fastify.listen({ port: PORT }, () => {
-  console.log(`Backend running on http://localhost:${PORT}`);
+fastify.listen({ port: PORT, host: '0.0.0.0' }, (err, address) => {
+  if (err) {
+    console.error(err);
+    process.exit(1);
+  }
+  console.log(`🚀 Server running at ${address}`);
 });
