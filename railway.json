@@ -1,0 +1,11 @@
+{
+  "build": {
+    "base": "backend",
+    "watchPatterns": ["backend/**"],
+    "env": "node",
+    "command": "npm install"
+  },
+  "run": {
+    "command": "npm start"
+  }
+}
