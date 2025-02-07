@@ -2,10 +2,9 @@
   "build": {
     "base": "backend",
     "watchPatterns": ["backend/**"],
-    "env": "node",
-    "command": "npm install"
+    "command": "cd backend && npm install"
   },
-  "run": {
-    "command": "npm start"
+  "start": {
+    "command": "cd backend && npm start"
   }
 }
